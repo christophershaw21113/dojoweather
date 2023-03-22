@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav id="first-nav">
+            <h1>DojoWeather</h1>
+            <div>
+                <li><a href="#" onclick="alert('Loading weather report...')">Burbank</a></li>
+                <li><a href="#" onclick="alert('Loading weather report...')">Chicago</a></li>
+                <li><a href="#" onclick="alert('Loading weather report...')">Dallas</a></li>
+            </div>
+        </nav>
+        <div id="second-nav">
+            <h2>San Jose</h2>
+            <div>
+                <p>show temperature in</p>
+                <select onchange="tempChange(this)" name="tempScale" id="tempScale">
+                <option value="farenheit">&#8457;</option>
+                <option value="celsius">&#8451;</option>
+                
+            </select>
+            </div>
+        </div>
+        <hr>
+
+        <main>
+            <div id="weekly-temps-container">
+                <div class="daily-temps">
+                    <h3>Today</h3>
+                    <img src="assets/some_rain.png" alt="image of clouds with some rain">
+                    <p>some rain</p>
+                    <div class="temps-high-low">
+                        <p class="red-degrees today">24&deg;</p>
+                        <p class="blue-degrees today">18&deg;</p>
+                    </div>
+                </div>
+                <div class="daily-temps">
+                    <h3>Tomorrow</h3>
+                    <img src="assets/some_sun.png" alt="image of a bright sun">
+                    <p>some sun</p>
+                    <div class="temps-high-low">
+                        <p class="red-degrees tomorrow">27&deg;</p>
+                        <p class="blue-degrees tomorrow">19&deg;</p>
+                    </div>
+                </div>
+                <div class="daily-temps">
+                    <h3>Friday</h3>
+                    <img src="assets/some_clouds.png" alt="image of a cloudy day">
+                    <p>some clouds</p>
+                    <div class="temps-high-low">
+                        <p class="red-degrees friday">21&deg;</p>
+                        <p class="blue-degrees friday">16&deg;</p>
+                    </div>
+                </div>
+                <div class="daily-temps">
+                    <h3>Saturday</h3>
+                    <img src="assets/some_sun.png" alt="image of a bright sun">
+                    <p>some sun</p>
+                    <div class="temps-high-low">
+                        <p class="red-degrees saturday">26&deg;</p>
+                        <p class="blue-degrees saturday">21&deg;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cookie-popup">
+
+                <img src="assets/cookie.png" alt="cookie image to accept cookies on website">
+                <div id="cookie-info">
+                    <h4>Stop! Cookie time</h4>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide socila media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button onclick="dismissBtn()">I Accept</button>
+            </div>
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
